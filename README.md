@@ -34,3 +34,17 @@ This message shows that your installation appears to be working correctly.
 ### Docker Compose
 
 Install Docker Compose following the instructions here: https://docs.docker.com/compose/install/
+
+## Other preparation (optional)
+
+If bandwidth is an issue, download the following images after Docker install:
+
+```shell
+docker pull ubuntu:bionic
+docker pull nginx:1.14
+docker pull nginx:1.14-alpine
+docker pull php:7.2-fpm
+docker pull php:7.2-fpm-alpine
+docker pull metasploitframework/metasploit-framework:latest
+docker pull wpscanteam/wpscan
+```
