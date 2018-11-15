@@ -5,7 +5,7 @@ Intro to Docker for security people
 
 ### Docker
 
-Follow the instructions for your OS:
+Use the CE (Community Edition), and follow the instructions for your OS:
 
 * [Linux](https://docs.docker.com/install/)
 * [macOS](https://docs.docker.com/docker-for-mac/install/)
