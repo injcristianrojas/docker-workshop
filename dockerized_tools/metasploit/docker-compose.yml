@@ -6,6 +6,7 @@ services:
       DATABASE_URL: postgres://postgres@db:5432/msf
     links:
       - db
+      - shellshock
     ports:
       - 4444:4444
     volumes:
@@ -16,6 +17,11 @@ services:
     image: postgres:10-alpine
     volumes:
       - pg_data:/var/lib/postgresql/data
+
+  shellshock:
+    image: hmlio/vaas-cve-2014-6271
+    ports:
+      - 80:80
 
 volumes:
   pg_data:
